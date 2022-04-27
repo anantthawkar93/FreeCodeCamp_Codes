@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>undefined value from a function</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+
+		let sum = 0;
+
+		function addThree() {
+		  sum = sum + 3;
+		}
+
+		function addFive(){
+		  sum = sum + 5;
+		}
+		
+		addThree();
+		addFive();
+
+		console.log(addThree());
+		console.log(addFive());
+
+		/*Global vs. Local Scope in Functions
+		It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
+		*/
+	</script>
+</body>
+</html>

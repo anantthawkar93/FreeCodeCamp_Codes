@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>profile-lookup</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <script type="text/javascript">
+    
+  const contacts = [
+    {
+      firstName: "Akira",
+      lastName: "Laine",
+      number: "0543236543",
+      likes: ["Pizza", "Coding", "Brownie Points"],
+    },
+    {
+      firstName: "Harry",
+      lastName: "Potter",
+      number: "0994372684",
+      likes: ["Hogwarts", "Magic", "Hagrid"],
+    },
+    {
+      firstName: "Sherlock",
+      lastName: "Holmes",
+      number: "0487345643",
+      likes: ["Intriguing Cases", "Violin"],
+    },
+    {
+      firstName: "Kristian",
+      lastName: "Vos",
+      number: "unknown",
+      likes: ["JavaScript", "Gaming", "Foxes"],
+    },
+  ];
+
+  function lookUpProfile(name, prop) {
+    
+    for(let x = 0; x < contacts.length; x++){
+      if(contacts[x].firstName === name){
+        if(contacts[x].hasOwnProperty(prop)){
+          return contacts[x][prop];
+        }
+        else{
+          return "No such property";
+        }
+      }
+    }
+    return "No such contact";
+  
+  }
+
+  lookUpProfile("Akira", "likes");
+  console.log(lookUpProfile("Akira", "likes"));
+  </script>
+</body>
+</html>

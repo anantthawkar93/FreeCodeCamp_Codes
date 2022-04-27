@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Accessing Nested Objects</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		const myStorage = {
+		  "car": {
+		    "inside": {
+		      "glove box": "maps",
+		      "passenger seat": "crumbs"
+		     },
+		    "outside": {
+		      "trunk": "jack"
+		    }
+		  }
+		};
+
+		const gloveBoxContents = myStorage.car.inside["glove box"];
+
+		console.log(gloveBoxContents);
+
+		/*Accessing Nested Objects
+		The sub-properties of objects can be accessed by chaining together the dot or bracket notation.*/
+			</script>
+	
+</body>
+</html>

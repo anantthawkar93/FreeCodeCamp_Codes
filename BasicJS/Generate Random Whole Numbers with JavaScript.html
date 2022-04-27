@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Generate Random whole Numbers</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		function randomWholeNum() {
+
+			  return Math.floor(Math.random()*10);
+			}
+
+			console.log(randomWholeNum());
+
+			/*Generate Random Whole Numbers with JavaScript
+			It's great that we can generate random decimal numbers, but it's even more useful if we use it to generate random whole numbers.
+
+			Use Math.random() to generate a random decimal.
+			Multiply that random decimal by 20.
+			Use another function, Math.floor() to round the number down to its nearest whole number.
+			Remember that Math.random() can never quite return a 1 and, because we're rounding down, it's impossible to actually get 20. This technique will give us a whole number between 0 and 19.*/
+	</script>
+	
+</body>
+</html>
