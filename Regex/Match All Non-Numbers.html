@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Match All Non Numbers</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		let movieName = "2001: A Space Odyssey";
+		let noNumRegex = /\D/g; // \D is equal to the character class [^0-9].
+		let result = movieName.match(noNumRegex).length;
+
+		console.log(result);
+
+		/*Match All Non-Numbers
+		The last challenge showed how to search for digits using the shortcut \d with a lowercase d. You can also search for non-digits using a similar shortcut that uses an uppercase D instead.
+
+		The shortcut to look for non-digit characters is \D. This is equal to the character class [^0-9], which looks for a single character that is not a number between zero and nine.
+		*/
+	</script> 
+									
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Use Capture Groups to Search and Replace</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		let str = "one two three";
+		let fixRegex = /(\w+)\s(\w+)\s(\w+)/; 
+		let replaceText = "$3 $2 $1";
+		let result = str.replace(fixRegex, replaceText);
+
+		console.log(result);
+
+		/*Use Capture Groups to Search and Replace
+		Searching is useful. However, you can make searching even more powerful when it also changes (or replaces) the text you match.
+
+		You can search and replace text in a string using .replace() on a string. The inputs for .replace() is first the regex pattern you want to search for. The second parameter is the string to replace the match or a function to do something.
+
+		let wrongText = "The sky is silver.";
+		let silverRegex = /silver/;
+		wrongText.replace(silverRegex, "blue");
+		The replace call would return the string The sky is blue..
+
+		You can also access capture groups in the replacement string with dollar signs ($).
+
+		"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+		The replace call would return the string Camp Code.*/
+			</script> 
+									
+</body>
+</html>

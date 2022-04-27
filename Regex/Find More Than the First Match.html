@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Find More Than the First Match</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		let twinkleStar = "Twinkle, twinkle, little star";
+		let starRegex = /Twinkle/gi; 
+		let result = twinkleStar.match(starRegex); 
+
+		console.log(result);
+
+		/*Find More Than the First Match
+		So far, you have only been able to extract or search a pattern once.
+
+		let testStr = "Repeat, Repeat, Repeat";
+		let ourRegex = /Repeat/;
+		testStr.match(ourRegex);
+		Here match would return ["Repeat"].
+
+		To search or extract a pattern more than once, you can use the g flag.
+
+		let repeatRegex = /Repeat/g;
+		testStr.match(repeatRegex);
+		And here match returns the value ["Repeat", "Repeat", "Repeat"]*/
+	</script>
+	
+</body>
+</html>
