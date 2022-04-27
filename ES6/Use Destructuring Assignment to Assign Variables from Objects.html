@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Use Destructuring Assignment to Assign variables from Objects</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		const HIGH_TEMPERATURES = {
+			  yesterday: 75,
+			  today: 77,
+			  tomorrow: 80
+			};
+
+			// Only change code below this line
+			  
+			const { today : highToday, tomorrow : highTomorrow } = HIGH_TEMPERATURES;
+
+			console.log(HIGH_TEMPERATURES);
+
+			// Only change code above this line
+
+			/*Use Destructuring Assignment to Assign Variables from Objects
+			Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value.
+
+			Using the same object from the last example:
+
+			const user = { name: 'John Doe', age: 34 };
+			Here's how you can give new variable names in the assignment:
+
+			const { name: userName, age: userAge } = user;*/
+				</script>
+	
+</body>
+</html>
